@@ -1,0 +1,14 @@
+
+# ===== Java / Spring Boot =====
+/target/
+/bin/
+*.class
+*.jar
+*.war
+*.log
+
+# Maven / Gradle
+/.mvn/
+/build/
+/out/
+/.gradle/
