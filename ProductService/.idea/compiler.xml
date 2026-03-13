@@ -10,7 +10,7 @@
         <module name="service-registry" />
         <module name="ConfigServer" />
       </profile>
-      <profile name="Annotation profile for ProductService" enabled="true">
+      <profile name="Annotation profile for CloudGateway" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
@@ -20,11 +20,13 @@
         <module name="OrderService" />
         <module name="ProductService" />
         <module name="PaymentService" />
+        <module name="CloudGateway" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="CloudGateway" options="-parameters" />
       <module name="ConfigServer" options="-parameters" />
       <module name="OrderService" options="-parameters" />
       <module name="PaymentService" options="-parameters" />

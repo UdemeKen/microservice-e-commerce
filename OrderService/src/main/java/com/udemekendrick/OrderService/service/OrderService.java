@@ -1,6 +1,7 @@
 package com.udemekendrick.OrderService.service;
 
 import com.udemekendrick.OrderService.model.OrderRequest;
+import com.udemekendrick.OrderService.model.OrderResponse;
 
 /**
  * Author: Udeme Kendrick
@@ -13,4 +14,6 @@ import com.udemekendrick.OrderService.model.OrderRequest;
  */
 public interface OrderService {
     long placeOrder(OrderRequest orderRequest);
+
+    OrderResponse getOrderDetails(long orderId);
 }

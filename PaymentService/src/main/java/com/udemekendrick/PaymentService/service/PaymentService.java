@@ -1,6 +1,7 @@
 package com.udemekendrick.PaymentService.service;
 
 import com.udemekendrick.PaymentService.model.PaymentRequest;
+import com.udemekendrick.PaymentService.model.PaymentResponse;
 
 /**
  * Author: Udeme Kendrick
@@ -13,4 +14,6 @@ import com.udemekendrick.PaymentService.model.PaymentRequest;
  */
 public interface PaymentService {
     long doPayment(PaymentRequest paymentRequest);
+
+    PaymentResponse getPaymentDetailsByOrderId(String orderId);
 }
